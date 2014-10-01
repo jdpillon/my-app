@@ -7,7 +7,18 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "owner"}
+                "element": {"#": "owner"},
+                "identifier": "container"
+            }
+        },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
             }
         }
     }
@@ -15,6 +26,7 @@
 </head>
 <body>
     <div data-montage-id="owner" class="MyComponent">
+        <div data-montage-id="slider"></div>
     </div>
 </body>
 </html>
